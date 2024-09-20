@@ -1,0 +1,141 @@
+*{
+    margin: 0;
+    pad: 0;
+}
+
+body{
+    min-height: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background:  #BBDBB4;
+}
+
+h1{
+    height: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    min-height: 45vh;
+    width: 40vh;
+    padding: 2rem;
+    border-radius: 25px;
+    background: #FCF0CC;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    
+}
+
+form{
+    margin: 2rem 0 1rem 0;
+}
+
+form,select,button,input{
+    width: 100%;
+    border: none;
+    outline: none;
+    border-radius: 0.75rem;
+    text-align: center;
+}
+
+select{
+    height: 2rem;
+    width: 3rem;
+    text-align: center;
+    margin-top: 1rem;
+}
+
+form input {
+    border: 1px solid lightgray;
+    font-size: 1rem;
+    height: 3rem;
+    padding-left: 0.5rem;
+  }
+  
+
+.dropdown {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 3rem;
+  }
+
+  .dropdown i {
+    font-size: 1.5rem;
+    margin-top: 1rem;
+  }
+
+
+form input {
+    border: 1px solid lightgrey ;
+    font-size: 1rem;
+    height: 3rem;
+    padding-left: 0.5rem ;
+}
+
+.select-container img {
+    max-width: 2rem;
+  }
+
+select{
+    padding: 0;
+    margin: 0;
+    cursor: pointer;
+    
+  }
+ 
+
+.select-container {
+    padding: .50rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 6rem;
+    border-radius: 0.5rem;
+    background: white;
+    border: 1px solid lightgray;
+  }
+
+.select-container select {
+    font-size: 1rem;
+    width: auto;
+  }
+
+.msg{
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    font-size: 1.5rem;
+}
+button{
+    height: 4rem;
+    cursor: pointer;
+    background: #861657;
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+
+@media (max-width: 600px) {
+  body {
+      flex-direction: column;
+      padding: 0 2.5rem;
+  }
+
+  h1{
+    height: 1.5rem;
+    font-size: 1.8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+  .container {
+      width: 90%;
+      min-height: auto;
+  }
+
+  form input, select, button {
+      font-size: 1.2rem;
+  }
+}
