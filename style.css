@@ -18,6 +18,19 @@ h1{
     justify-content: center;
     align-items: center;
 }
+
+/* For Chrome, Safari, Edge, and Opera */
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* For Firefox */
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+
 .container{
     min-height: 45vh;
     width: 40vh;
@@ -66,7 +79,14 @@ form input {
     font-size: 1.5rem;
     margin-top: 1rem;
   }
-
+  .arrow{
+    padding: 0;
+    margin: 0;
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 
 form input {
     border: 1px solid lightgrey ;
@@ -130,6 +150,13 @@ button{
     align-items: center;
 }
 
+.select-container {
+  background: white;
+}
+
+.select {
+  background: white;
+}
   .container {
       width: 90%;
       min-height: auto;
